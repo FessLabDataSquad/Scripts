@@ -27,4 +27,9 @@ cor(helps2[2:11], use="pairwise.complete.obs")
 cor(helps3[2:12], use="pairwise.complete.obs")
 cor(helps4[2:11], use="pairwise.complete.obs")
 
-
+#Save mean helpfulness ratings and Id to import to the analysis script
+need = c("Id" , "mean")
+write.csv(helps1[, need], "study1_helpfulness.csv", row.names = F)
+write.csv(helps2[, need], "study2_helpfulness.csv", row.names = F)
+write.csv(helps3[, need], "study3_helpfulness.csv", row.names = F)
+write.csv(helps4[, need], "study4_helpfulness.csv", row.names = F)
