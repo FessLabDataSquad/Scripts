@@ -32,7 +32,7 @@ dme1=dme1[-1,-2]
 tal1=tal1[-1,-2]
 ns1=ns1[-1,-2]
 
-#Merge each file (two at a time), where the common column should be 'Id'. Do not merge by 'Fr' column. The end result should have 32 columns. Use names() to double check column names. 
+#Merge each file (two at a time), where the common column should be 'Id'. Do not merge by 'Fr' column. Use names() to double check column names. 
 study_1=inner_join(ast1, az1, by='Id', sort=FALSE)
 study_1=inner_join(study_1, dme1, by='Id', sort=FALSE)
 study_1=inner_join(study_1, tal1, by='Id', sort=FALSE)
